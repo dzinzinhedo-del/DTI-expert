@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DTI-Expert</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <!-- Le JS doit être un script, pas un stylesheet -->
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* Scroll smooth */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="image/logo.png" alt="logo">
+
+  <nav>
+    <a href="#hero" data-key="accueil">Accueil</a>
+    <a href="#about" data-key="about">À Propos</a>
+    <a href="#services" data-key="services">Services</a>
+    <a href="#contact" data-key="contact">Contact</a>
+    <a href="#realisations" data-key="realisations">Réalisation</a>
+    <a href="#actualites" data-key="actualite">Actualité</a>
+  </nav>
+  <div class="socials">
+      <a href="https://web.facebook.com/profile.php?id=61588320097933" target="_blank"><img src="image/4494475.png" alt="Facebook"></a>
+      <a href="https://wa.me/+2290129628196" target="_blank"><img src="image/whatsapp_4494494.png" alt="WhatsApp"></a>
+      <a href="https://www.linkedin.com/company/111641288/admin/dashboard/" target="_blank"><img src="image/linkedin_4494498.png" alt="LinkedIn"></a>
+    </div>
+
+<div class="lang-switch">
+  <button onclick="setLang('fr')" id="btn-fr" class="active">FR</button>
+  <button onclick="setLang('en')" id="btn-en">EN</button>
+</div>
+
+<!-- Google Translate caché -->
+<div id="google_translate_element" style="display:none;"></div>
+    
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-text">
+    <h1 data-key="title"> La résilience par la donnée et l'innovation technologique</h1>
+
+    <p data-key="description">
+    DTI-Expert vous accompagne dans l’analyse de données et l’innovation technologique.
+    </p>
+
+    <!-- Bouton vers CONTACT -->
+    <a href="#contact" class="btn" data-key="cta">
+      Demander un accompagnement
+    </a>
+
+    <!-- Bouton vers A PROPOS -->
+    <a href="#about" class="btn btn-dark" data-key="learn">
+      En savoir plus
+    </a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-container">
+
+    <!-- IMAGE -->
+    <div class="about-image">
+      <img src="image/team_work.png" alt="DTI Expert">
+    </div>
+
+    <!-- CONTENU -->
+    <div class="about-content">
+      <h2 data-key="about_title">À propos de nous</h2>
+      <p data-key="about_description">
+        DTI-Expert (Data & Tech Innovation Expertise) est une entreprise spécialisée 
+        dans l’analyse de données et l’innovation technologique. 
+        Elle accompagne les organisations, projets et entreprises dans la prise de 
+        décision fondée sur la donnée afin de renforcer la résilience des systèmes 
+        agricoles, économiques, sanitaires, sociaux et environnementaux.
+      </p>
+
+      <h3 data-key="value_title">Notre valeur ajoutée</h3>
+      <ul>
+        <li data-key="value_1">Expertise multidisciplinaire</li>
+        <li data-key="value_2">Rigueur scientifique</li>
+        <li data-key="value_3">Solutions adaptées aux réalités locales</li>
+        <li data-key="value_4">Approche orientée impact et durabilité</li>
+      </ul>
+
+      <h3 data-key="vision_title">Notre vision</h3>
+      <p data-key="vision_desc">
+        Devenir l’une des entreprises de référence en Afrique dans le domaine de 
+        l’analyse de données et de l’innovation technologique.
+      </p>
+
+      <a href="#domaines" class="btn-about" data-key="see_domains">Voir nos domaines</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <h2 data-key="services_title">Nos Services</h2>
+  <div class="cards">
+
+  <div class="card">
+    <i class="fas fa-database icon"></i>
+    <h3 data-key="service_1">Collecte de données et conception d’expériences</h3>
+    <ul>
+      <li>Conception d’enquêtes et de protocoles de collecte</li>
+      <li>Plans d’échantillonnage</li>
+      <li>Contrôle qualité des données</li>
+      <li>Conception expérimentale et évaluation d’impact</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <i class="fas fa-chart-line icon"></i>
+    <h3 data-key="service_2">Analyse et modélisation des données</h3>
+    <ul>
+      <li>Analyse statistique et économétrique</li>
+      <li>Machine Learning</li>
+      <li>Analyse spatiale et climatique</li>
+      <li>Tableaux de bord décisionnels</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <i class="fas fa-microchip icon"></i>
+    <h3 data-key="service_3">Innovation technologique</h3>
+    <ul>
+      <li>Développement web</li>
+      <li>Tableaux de bord interactifs</li>
+      <li>Outils numériques</li>
+      <li>Automatisation</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <i class="fas fa-graduation-cap icon"></i>
+    <h3 data-key="service_4">Recherche, conseil et formation</h3>
+    <ul>
+      <li>Appui à la recherche</li>
+      <li>Rédaction scientifique</li>
+      <li>Formation data & IA</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section class="domaines" id="domaines">
+  <h2 data-key="domain_title">Domaines d’intervention</h2>
+
+  <div class="domaines-container">
+
+    <div class="domaine-card">
+      <img src="image/agri_monitor.png" alt="Agriculture">
+      <h3 data-key="domain_1">Agriculture et systèmes alimentaires</h3>
+    </div>
+
+    <div class="domaine-card">
+      <img src="image/environment.png" alt="Environnement">
+      <h3 data-key="domain_2">Environnement et climat</h3>
+    </div>
+
+    <div class="domaine-card">
+      <img src="image/Health.png" alt="Santé">
+      <h3 data-key="domain_3">Santé publique</h3>
+    </div>
+
+    <div class="domaine-card">
+      <img src="image/econo.png" alt="Économie">
+      <h3 data-key="domain_4">Économie et développement</h3>
+    </div>
+
+    <div class="domaine-card">
+      <img src="image/infr.png" alt="Urbain">
+      <h3 data-key="domain_5">Systèmes urbains et sociaux</h3>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-container">
+
+    <!-- LEFT -->
+    <div class="contact-info animate left">
+      <div class="contact-tag" data-key="contact_tag">Contactez-nous</div>
+      <h2 data-key="contact_title">Parlons de votre <span> futur projet </span></h2>
+      <p data-key="contact_desc">
+        Vous avez une idée, un projet ou une question ?
+        Nous sommes à votre disposition pour vous accompagner.
+      </p>
+
+      <div class="contact-details">
+        <div class="detail">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="detail-text">
+            <strong data-key="address_title">Adresse</strong>
+            <span data-key="address_value">Porto-Novo, Bénin</span>
+          </div>
+        </div>
+
+        <div class="detail">
+          <i class="fas fa-phone"></i>
+          <div class="detail-text">
+            <strong data-key="phone_title">Téléphone</strong>
+            <span data-key="phone_value">+229 01 29 62 81 96</span>
+          </div>
+        </div>
+
+        <div class="detail">
+          <i class="fas fa-envelope"></i>
+          <div class="detail-text">
+            <strong data-key="email_title">Email</strong>
+            <a href="mailto:dti.expertz@gmail.com">dti.expertz@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- RIGHT -->
+    <div class="contact-form animate right">
+      <h3 data-key="send_msg">Envoyez-nous un message</h3>
+     <form action="https://api.web3forms.com/submit" method="POST"> 
+        <input type="hidden" name="access_key" value="3e57243d-ac26-410d-bbde-e44df9b48189">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <div class="row">
+          <input type="email" name="email" placeholder="votre@email.com" required>
+          <input type="text" name="phone" placeholder="+229 XX XX XX XX XX">
+        </div>
+        <textarea name="message" placeholder="Décrivez votre projet ou votre question..." required></textarea>
+        <button type="submit">Envoyer le message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3 data-key="footer_title">DTI-Expert</h3>
+      <p data-key="footer_desc">Accompagnement de projets et solutions innovantes adaptées au contexte local.</p>
+    </div>
+    <div class="footer-center">
+      <h4 data-key="footer_contact">Contact</h4>
+      <p>Email: dti.expertz@gmail.com</p>
+      <p>Téléphone: +229 01 29 62 81 96</p>
+      <p>Adresse: Porto-novo, Bénin</p>
+    </div>
+    <div class="footer-right">
+      <h4 data-key="footer_follow">Suivez-nous</h4>
+      <div class="social-icons">
+        <a href="https://web.facebook.com/profile.php?id=61588320097933" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/+2290129628196" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/company/111641288/admin/dashboard/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 DTI-Expert. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'fr',
+    includedLanguages: 'fr,en'
+  }, 'google_translate_element');
+}
+
+// Fonction pour changer la langue
+function setLang(lang) {
+  const select = document.querySelector(".goog-te-combo");
+  if (!select) return;
+
+  select.value = lang;
+  select.dispatchEvent(new Event("change"));
+
+  // Active le bouton
+  document.getElementById("btn-fr").classList.remove("active");
+  document.getElementById("btn-en").classList.remove("active");
+
+  document.getElementById("btn-" + lang).classList.add("active");
+
+  // Sauvegarde
+  localStorage.setItem("lang", lang);
+}
+
+// Charger langue sauvegardée
+window.addEventListener("load", () => {
+  const savedLang = localStorage.getItem("lang");
+  if (savedLang) {
+    setTimeout(() => setLang(savedLang), 1000);
+  }
+});
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
